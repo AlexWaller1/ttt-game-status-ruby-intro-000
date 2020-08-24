@@ -16,7 +16,7 @@ WIN_COMBINATIONS=[
 ]
 
 def won?(board)
-  WIN_COMBINATIONS.each{|winning_trio|}
+  WIN_COMBINATIONS.each{|winning_trio|
   index_0=winning_trio[0]
   index_1=winning_trio[1]
   index_2=winning_trio[2]
@@ -29,9 +29,9 @@ def won?(board)
     return winning_trio
   elsif position_1=="O" && position_2=="O" && position_3=="O"
     return winning_trio
-  else
+  end
+}
  return false
- end
 end
 
 def full?(board)
